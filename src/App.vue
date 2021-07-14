@@ -29,7 +29,6 @@
               {{ icon }}
             </v-icon>
           </v-btn>
-      
         </v-card-text>
 
         <v-card-text class="white--text pt-0">
