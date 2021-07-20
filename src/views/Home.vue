@@ -21,6 +21,16 @@ export default {
   components: {
     // HelloWorld,
   },
+  beforeMount() {
+    console.log("base url: " + process.env.API_BASE_URL);
+    console.log("base url: " + process.env.VUE_APP_TITLE);
+    console.log("base url: " + process.env.VUE_MY_VAR);
+    console.log("base url: " + process.env.VUE_APP_VERSION);
+  },
+  mounted() {
+    // console.log(process.env.APP_URL);
+    console.log(process.env.VUE_APP_TITLE);
+  },
   metaInfo() {
     return {
       title: `${this.pagetitle} - Vue2 Project`,

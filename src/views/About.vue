@@ -1,7 +1,7 @@
 <template>
   <v-container fluid>
     <h1>This is an about page</h1>
-    <v-icon v-text="icon"></v-icon>
+
     <v-icon>abugida-thai</v-icon>
     <v-icon>arrow_downward</v-icon>
   </v-container>

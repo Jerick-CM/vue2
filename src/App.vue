@@ -2,11 +2,9 @@
   <v-app>
     <v-app-bar app color="primary" dark>
       <div class="d-flex align-center">
-        <v-btn to="/" flat color="primary" class="pa-1 ma-1"> Home </v-btn>
+        <v-btn to="/" color="primary" class="pa-1 ma-1"> Home </v-btn>
         |
-        <v-btn to="/about" flat color="primary" class="pa-1 ma-1">
-          About
-        </v-btn>
+        <v-btn to="/about" color="primary" class="pa-1 ma-1"> About </v-btn>
       </div>
 
       <v-spacer></v-spacer>
@@ -17,7 +15,7 @@
     </v-main>
 
     <v-footer dark padless>
-      <v-card flat tile class="indigo lighten-1 white--text text-center">
+      <v-card tile class="indigo lighten-1 white--text text-center">
         <v-card-text>
           <v-btn
             v-for="icon in icons"
