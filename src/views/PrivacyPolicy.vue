@@ -1,32 +1,19 @@
 <template>
-  <!-- <hello-world /> -->
   <v-container fluid>
-    <h1>Homepage</h1>
-    <i class="mdi mdi-flask" aria-hidden="true"></i>
-    <!-- <span class="material-icons-outlined"></span> -->
-    <v-icon>facebook</v-icon>
+    <h1>This is an {{ pagetitle }} page</h1>
+
+
   </v-container>
 </template>
-
 <script>
-// import HelloWorld from "../components/HelloWorld";
-
 export default {
-  name: "Home",
+  name: "PrivacyPolicy", //must have no space
   data() {
     return {
-      pagetitle: "Homepage",
+      pagetitle: "Privacy Policy",
     };
   },
-  components: {
-    // HelloWorld,
-  },
-  beforeMount() {},
-  mounted() {
-    // console.log(process.env.VUE_APP_TITLE);
-    // console.log(process.env.APP_URL);
-    // console.log(process.env.VUE_APP_ROOT_API);
-  },
+  components: {},
   metaInfo() {
     return {
       title: `${this.pagetitle} - Vue2 Project`,

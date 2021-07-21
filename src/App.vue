@@ -5,6 +5,10 @@
         <v-btn to="/" color="primary" class="pa-1 ma-1"> Home </v-btn>
         |
         <v-btn to="/about" color="primary" class="pa-1 ma-1"> About </v-btn>
+        |
+        <v-btn to="/privacy-policy" color="primary" class="pa-1 ma-1"> Privacy Policy </v-btn>
+        |
+        <v-btn to="/terms-of-service" color="primary" class="pa-1 ma-1"> Terms of Service </v-btn>
       </div>
 
       <v-spacer></v-spacer>
