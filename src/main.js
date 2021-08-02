@@ -14,14 +14,19 @@ import "@mdi/font/css/materialdesignicons.css";
 
 import VueMeta from "vue-meta";
 import axios from "axios";
+import i18n from "@/plugins/i18n";
+import FlagIcon from "vue-flag-icon";
+
 // Vue.http.options.crossOrigin = true;
 axios.defaults.baseURL = process.env.VUE_APP_ROOT_API;
 axios.defaults.withCredentials = true;
 
+Vue.use(FlagIcon);
 Vue.use(VueMeta);
 Vue.config.productionTip = false;
 
 new Vue({
+    i18n,
     router,
     store,
     vuetify,
