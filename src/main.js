@@ -10,15 +10,20 @@ import "roboto-fontface/css/roboto/roboto-fontface.css";
 
 import "material-design-icons-iconfont/dist/material-design-icons.css";
 
-import '@mdi/font/css/materialdesignicons.css';
+import "@mdi/font/css/materialdesignicons.css";
 
 import VueMeta from "vue-meta";
+import axios from "axios";
+// Vue.http.options.crossOrigin = true;
+axios.defaults.baseURL = process.env.VUE_APP_ROOT_API;
+axios.defaults.withCredentials = true;
+
 Vue.use(VueMeta);
 Vue.config.productionTip = false;
 
 new Vue({
-  router,
-  store,
-  vuetify,
-  render: (h) => h(App),
+    router,
+    store,
+    vuetify,
+    render: (h) => h(App),
 }).$mount("#app");

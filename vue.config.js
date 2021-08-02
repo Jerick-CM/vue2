@@ -1,4 +1,5 @@
-process.env.VUE_APP_VERSION = require('./package.json').version
+process.env.VUE_APP_VERSION = require("./package.json").version;
 module.exports = {
-  transpileDependencies: ["vuetify"],
+    transpileDependencies: ["vuetify"],
+    devServer: { proxy: "http://localhost/api", port: 3001 },
 };

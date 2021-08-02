@@ -5,33 +5,42 @@ import Home from "../views/Home.vue";
 Vue.use(VueRouter);
 
 const routes = [
-  {
-    path: "/",
-    name: "Home",
-    component: Home,
-  },
-  {
-    path: "/about",
-    name: "About",
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/About.vue"),
-  },
-  {
-    path: "/terms-of-service",
-    name: "Privacy Policy",
-    component: () => import("../views/PrivacyPolicy.vue"),
-  },
-  {
-    path: "/privacy-policy",
-    name: "Terms of Service",
-    component: () => import("../views/TermsOfService.vue"),
-  },
+    {
+        path: "/",
+        name: "Home",
+        component: Home,
+    },
+    {
+        path: "/about",
+        name: "About",
+        component: () =>
+            import(/* webpackChunkName: "about" */ "../views/About.vue"),
+    },
+    {
+        path: "/terms-of-service",
+        name: "Privacy Policy",
+        component: () => import("../views/PrivacyPolicy.vue"),
+    },
+    {
+        path: "/privacy-policy",
+        name: "Terms of Service",
+        component: () => import("../views/TermsOfService.vue"),
+    },
+    {
+        path: "/404",
+        name: "404",
+        component: () => import("../views/NotFound.vue"),
+    },
+    {
+        path: "*",
+        redirect: { name: "404" },
+    },
 ];
 
 const router = new VueRouter({
-  mode: "history",
-  base: process.env.BASE_URL,
-  routes,
+    mode: "history",
+    base: process.env.BASE_URL,
+    routes,
 });
 
 export default router;
